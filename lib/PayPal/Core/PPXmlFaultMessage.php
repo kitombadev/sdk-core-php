@@ -31,7 +31,7 @@ abstract class PPXmlFaultMessage
         }
 
         if (($first = reset($map)) && !is_array($first) && !is_numeric(key($map))) {
-            parent::init($map, false);
+            $this->init($map, false);
             return;
         }
 
